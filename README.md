@@ -77,9 +77,15 @@ brew install cmake
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer
-#报错
+!!!报错
     Run Build Command(s):/usr/bin/make cmTC_d3aa3/fast && xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+    
 xcode-select --install
+
+CMake Error: The source directory "/Users/rongdongsheng/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/cregex" does not appear to contain CMakeLists.txt.
+rm -rf YouCompleteMe/third_party/ycmd/third_party/cregex 
+cd YouCompleteMe/third_party/ycmd/third_party
+git submodule update --init --recursive
 ```
 
 # 补全插件
