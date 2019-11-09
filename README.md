@@ -3,11 +3,15 @@ Golang vim IDE for guyu
 
 
 # install golang
+```
 brew install go
+```
 
 # install Vundle
+```
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 https://github.com/VundleVim/Vundle.vim
+```
 
 # edit ~/.vimrc
 ```
@@ -60,10 +64,13 @@ filetype plugin indent on    " required
 syntax on
 
 # 添加插件，在vimrc的vundle#begin 和 vundle#end中间添加
+```
 Plugin 'fatih/vim-go'
 	
 Plugin 'Valloric/YouCompleteMe'
+```
 # YCM需要编译
+```
 brew install cmake
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
@@ -71,12 +78,16 @@ git submodule update --init --recursive
 #报错
     Run Build Command(s):/usr/bin/make cmTC_d3aa3/fast && xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
 xcode-select --install
+```
 
 # 补全插件
+```
 Plugin 'SirVer/ultisnips'
+```
 
 
 # 解决YCM与UltiSnips的快捷键冲突，在vimrc中添加
+```
 " YCM settings
 let g:ycm_key_list_select_completion = ['', '']
 let g:ycm_key_list_previous_completion = ['']
@@ -85,10 +96,13 @@ let g:ycm_key_invoke_completion = ''
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+```
 
 
 # 自动格式化，vimrc
+```
 let g:go_fmt_command = "goimports"
+```
 
 let g:go_bin_path = "/usr/local/opt/go@1.13/bin/"
 
