@@ -61,7 +61,9 @@ filetype plugin indent on    " required
 ```
 
 # 配置语法高亮，在vimrc里面加
+```
 syntax on
+```
 
 # 添加插件，在vimrc的vundle#begin 和 vundle#end中间添加
 ```
