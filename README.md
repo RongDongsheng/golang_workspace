@@ -10,6 +10,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 https://github.com/VundleVim/Vundle.vim
 
 # edit ~/.vimrc
+```
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -53,6 +54,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+```
 
 # 配置语法高亮，在vimrc里面加
 syntax on
