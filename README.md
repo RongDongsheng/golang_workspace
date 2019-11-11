@@ -112,6 +112,20 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:go_fmt_command = "goimports"
 ```
 
+# 安装tagbar
+```
+go get -u github.com/jstemmer/gotags
+brew install ctags
+```
+vimrc添加：
+```
+Plugin 'Tagbar'
+" 设置tagbar的窗口宽度
+let g:tagbar_width=30
+" 映射Tagbar的快捷键,按F3自动打开
+map <F3> :TagbarToggle<CR>
+```
+
 let g:go_bin_path = "/usr/local/opt/go@1.13/bin/"
 
 
