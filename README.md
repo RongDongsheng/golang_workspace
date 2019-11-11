@@ -120,11 +120,15 @@ brew install ctags
 vimrc添加：
 ```
 Plugin 'Tagbar'
+
 " 设置tagbar的窗口宽度
 let g:tagbar_width=30
 " 映射Tagbar的快捷键,按F3自动打开
 map <F3> :TagbarToggle<CR>
 ```
+vim中执行:PluginInstall命令
+注意每次修改vimrc添加plugin后，都需要在vim里面用:PluginInstall命令安装插件。
+
 
 let g:go_bin_path = "/usr/local/opt/go@1.13/bin/"
 
